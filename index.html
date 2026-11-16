@@ -669,5 +669,6 @@ document.getElementById('y').textContent=new Date().getFullYear();
 const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.12});
 document.querySelectorAll('.rv').forEach((el,i)=>{el.style.transitionDelay=(i%3)*90+'ms';io.observe(el)});
 </script>
+<script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "cfade03d6aad4359a93f959eaf4d75a2"}'></script>
 </body>
 </html>
